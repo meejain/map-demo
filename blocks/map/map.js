@@ -27,7 +27,7 @@ function generateNonce() {
 
 async function googleMapLoader(nonce, locale) {
   const mapScript = document.createElement('script');
-  mapScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyB_b3L2RUs0MUbtDZH7ORae1gswT03z4AY&callback=initMap&language=${locale}&loading=async`;
+  mapScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyC7xgv8UHqIezRn3vT0_c03x_5IxZxzu3I&callback=initMap&language=${locale}&loading=async`;
   mapScript.defer = true;
   mapScript.async = true;
   mapScript.nonce = nonce;

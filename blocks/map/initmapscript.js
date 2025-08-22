@@ -274,7 +274,7 @@ function getCurrentLanguage() {
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 46.77448320376698, lng: 8.009033203125},
       //zoom: 9, // Zoom will be set dynamically after fitBounds
-      mapId: '5c5cdb8a2b86055061abff98',
+      mapId: 'bf63d7e16622e43524258229',
       draggable: draggable,
       scrollwheel: false,
       mapTypeControl: false, // Désactiver le contrôle du type de carte (plan/satellite)
