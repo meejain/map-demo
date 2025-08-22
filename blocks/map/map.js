@@ -1,5 +1,6 @@
 import { div } from '../../scripts/dom-helpers.js';
 import { getPathSegments } from '../../scripts/utils.js';
+import { config } from '../../config.js';
 
 async function loadScript(src, attrs) {
   return new Promise((resolve, reject) => {
@@ -27,7 +28,7 @@ function generateNonce() {
 
 async function googleMapLoader(nonce, locale) {
   const mapScript = document.createElement('script');
-  mapScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyC7xgv8UHqIezRn3vT0_c03x_5IxZxzu3I&callback=initMap&language=${locale}&loading=async`;
+  mapScript.src = `https://maps.googleapis.com/maps/api/js?key=${config.googleMaps.apiKey}&callback=initMap&language=${locale}&loading=async`;
   mapScript.defer = true;
   mapScript.async = true;
   mapScript.nonce = nonce;

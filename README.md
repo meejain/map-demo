@@ -19,6 +19,27 @@ Before using the aem-boilerplate, we recommand you to go through the documentati
 npm i
 ```
 
+## Configuration Setup
+
+This project uses external APIs that require configuration. Follow these steps to set up your configuration:
+
+1. **Copy the configuration template:**
+   ```sh
+   cp config.template.js config.js
+   ```
+
+2. **Update the configuration:**
+   Open `config.js` and replace the placeholder values with your actual API keys:
+   
+   - **Google Maps API Key**: Get your API key from the [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
+     - Create a new project or select an existing one
+     - Enable the Maps JavaScript API
+     - Create credentials (API Key)
+     - **Important**: Restrict your API key to your domain for security
+
+3. **Verify the setup:**
+   The `config.js` file is gitignored to prevent committing sensitive data to version control.
+
 ## Linting
 
 ```sh
