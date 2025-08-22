@@ -18,10 +18,6 @@ body.map-landing main .default-content-wrapper h1 {
     padding: 15px;
 }
 
-body.map-landing main .default-content-wrapper h1 {
-    color: var(--site-color-bien);
-}
-
 body.map-landing main .default-content-wrapper p:first-of-type {
     position: relative;
     margin: 15px;
@@ -56,11 +52,6 @@ body.map-landing main .default-content-wrapper p.button-container a.button {
     right: 10px;
 }
 
-body.map-landing main .default-content-wrapper p.button-container a.button {
-    color: var(--site-color-2-bien);
-    background-image: url('/icons/btn_bien_back.svg');
-}
-
 
 body.map-landing .section.pale-grey-bg {
     background-color: var(--news-bg-page);
@@ -68,11 +59,7 @@ body.map-landing .section.pale-grey-bg {
     margin: 0;
 }
 
-body .section.pale-grey-bg {
-    background-color: var(--map-bg-page-bien);
-}
-
-body .section.pale-grey-bg .cards-wrapper {
+body.map-landing .section.pale-grey-bg .cards-wrapper {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -83,10 +70,6 @@ body .section.pale-grey-bg .cards-wrapper {
     box-sizing: border-box;
     background-color: var(--map-carte-icone-container);
     margin: 0;
-}
-
-body.map-landing .section.pale-grey-bg .cards-wrapper {
-    background-color: var(--map-carte-icone-container-bien);
 }
 
 
