@@ -2,6 +2,10 @@
 
 A comprehensive interactive map system built with Google Maps API, featuring category-based filtering, marker clustering, and responsive design. This implementation supports multi-language content and dynamic zoom calculation based on geographic marker distribution.
 
+## Environments
+- Preview: https://main--map-demo--meejain.aem.page/
+- Live: https://main--map-demo--meejain.aem.live/
+
 ## 🎯 **Generic Demo Implementation**
 
 **⚠️ IMPORTANT**: This codebase contains **generic placeholder content** designed to be customized for your specific project:
