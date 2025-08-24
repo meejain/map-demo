@@ -210,7 +210,7 @@ function getCurrentLanguage() {
       }).join(' | ');
     }
     
-    return `<div class='myboxmap'><img src='https://content.da.live/audemars-piguet/arbres-fondationsaudemarspiguet/assets/images/map/projects-listing/${imageId}/${imageName}.jpg' width='220' height='144'><p class="carte_box_partenaires">${localizedPartner}</p><p class="carte_box_pays">${localizedCountry}</p><p class="carte_box_date">${dateRange}</p><p class="carte_box_titre">${localizedTitle}</p><p class="carte_box_categorie">${localizedCategory}</p><p class="carte_box_link"><a href=${localizedUrl}>${seeMoreText}</a></p></div>`;
+    return `<div class='myboxmap'><img src='https://main--map-demo--meejain.aem.page/assets/images/map/projects-listing/${imageId}/${imageName}.jpg' width='220' height='144'><p class="carte_box_partenaires">${localizedPartner}</p><p class="carte_box_pays">${localizedCountry}</p><p class="carte_box_date">${dateRange}</p><p class="carte_box_titre">${localizedTitle}</p><p class="carte_box_categorie">${localizedCategory}</p><p class="carte_box_link"><a href=${localizedUrl}>${seeMoreText}</a></p></div>`;
   }
   
   var draggable=true;
@@ -329,7 +329,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(1162, "img-0422", "Associa\u00e7\u00e3o Projecto Vit\u00f3", "Cape Verde", "2025 \u2192 2027", "Implementing an organisational development action plan", "Organisational development", "implementing-an-organisational-development-action-plan");
+    myOptions.content=createInfoBoxContent(1162, "adobe-logo", "Associa\u00e7\u00e3o Projecto Vit\u00f3", "Cape Verde", "2025 \u2192 2027", "Implementing an organisational development action plan", "Organisational development", "implementing-an-organisational-development-action-plan");
   
     infoWindows[99]= new InfoBox(myOptions);
   
@@ -374,7 +374,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(855, "tompotanah-villages-c-blue-forests", "Comit\u00e9 fran\u00e7ais de l\u2019UICN", "Multi-country", "2025 \u2192 2027", "Support programme for biodiversity NGOs working in developing countries (ProBioDev)", "Conservation\/restoration | Awareness raising | Organisational development", "support-programme-for-biodiversity-ngos-working-in-developin");
+    myOptions.content=createInfoBoxContent(855, "adobe-logo", "Comit\u00e9 fran\u00e7ais de l\u2019UICN", "Multi-country", "2025 \u2192 2027", "Support programme for biodiversity NGOs working in developing countries (ProBioDev)", "Conservation\/restoration | Awareness raising | Organisational development", "support-programme-for-biodiversity-ngos-working-in-developin");
   
     infoWindows[70]= new InfoBox(myOptions);
   
@@ -419,7 +419,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(861, "site-du-programme-bamboo-lemur-4-c-sebastien-meys", "Helpsimus (Association fran\u00e7aise pour la sauvegarde du grand hapal\u00e9mur)", "Madagascar", "2024 \u2192 2027", "Stepping up protection for a thousand hectares of forest fragments housing the largest population of greater bamboo lemurs in the wild", "Conservation\/restoration | Awareness raising", "stepping-up-protection-for-a-thousand-hectares-of-forest-fra");
+    myOptions.content=createInfoBoxContent(861, "adobe-logo", "Helpsimus (Association fran\u00e7aise pour la sauvegarde du grand hapal\u00e9mur)", "Madagascar", "2024 \u2192 2027", "Stepping up protection for a thousand hectares of forest fragments housing the largest population of greater bamboo lemurs in the wild", "Conservation\/restoration | Awareness raising", "stepping-up-protection-for-a-thousand-hectares-of-forest-fra");
   
     infoWindows[71]= new InfoBox(myOptions);
   
@@ -464,7 +464,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(869, "petites-filles-1-c-darren-cresswell", "The National Forest Company", "England", "2024 \u2192 2027", "Creating a forest for learning III", "Awareness raising", "creating-a-forest-for-learning-iii");
+    myOptions.content=createInfoBoxContent(869, "adobe-logo", "The National Forest Company", "England", "2024 \u2192 2027", "Creating a forest for learning III", "Awareness raising", "creating-a-forest-for-learning-iii");
   
     infoWindows[72]= new InfoBox(myOptions);
   
@@ -509,7 +509,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(811, "animation-classe-verte-2-c-credi-ong", "Centre R\u00e9gional de Recherche et d\u2019\u00c9ducation pour le D\u00e9veloppement Int\u00e9gr\u00e9 (CREDI-ONG)", "Benin", "2023 \u2192 2026", "Resilience and adaptation to climate change in the Sitatunga Valley", "Conservation\/restoration | Awareness raising", "resilience-and-adaptation-to-climate-change-in-the-sitatunga");
+    myOptions.content=createInfoBoxContent(811, "adobe-logo", "Centre R\u00e9gional de Recherche et d\u2019\u00c9ducation pour le D\u00e9veloppement Int\u00e9gr\u00e9 (CREDI-ONG)", "Benin", "2023 \u2192 2026", "Resilience and adaptation to climate change in the Sitatunga Valley", "Conservation\/restoration | Awareness raising", "resilience-and-adaptation-to-climate-change-in-the-sitatunga");
   
     infoWindows[15]= new InfoBox(myOptions);
   
@@ -554,7 +554,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(159, "alpes-vivantes-1-c-alpes-vivantes", "Alpes vivantes", "Switzerland", "2023 \u2192 2026", "Sustainable protection of biodiversity in the Vaud Alps", "Conservation\/restoration | Awareness raising", "sustainable-protection-of-biodiversity-in-the-vaud-alps");
+    myOptions.content=createInfoBoxContent(159, "adobe-logo", "Alpes vivantes", "Switzerland", "2023 \u2192 2026", "Sustainable protection of biodiversity in the Vaud Alps", "Conservation\/restoration | Awareness raising", "sustainable-protection-of-biodiversity-in-the-vaud-alps");
   
     infoWindows[5]= new InfoBox(myOptions);
   
@@ -599,7 +599,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(201, "beneficiaire-du-projet-cajou-cambodge-1-c-eper", "EPER", "Cambodia", "2023 \u2192 2026", "Green Cashew - Sustainable cashew cultivation to fight climate change", "Conservation\/restoration | Ancestral knowledge", "green-cashew-sustainable-cashew-cultivation-to-fight-climate");
+    myOptions.content=createInfoBoxContent(201, "adobe-logo", "EPER", "Cambodia", "2023 \u2192 2026", "Green Cashew - Sustainable cashew cultivation to fight climate change", "Conservation\/restoration | Ancestral knowledge", "green-cashew-sustainable-cashew-cultivation-to-fight-climate");
   
     infoWindows[12]= new InfoBox(myOptions);
   
@@ -644,7 +644,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(222, "foretxcellence-1-c-romain-blanc", "For\u00eatxcellence", "Switzerland", "2022 \u2192 2027", "For\u00eatxcellence", "Ancestral knowledge", "foretxcellence");
+    myOptions.content=createInfoBoxContent(222, "adobe-logo", "For\u00eatxcellence", "Switzerland", "2022 \u2192 2027", "For\u00eatxcellence", "Ancestral knowledge", "foretxcellence");
   
     infoWindows[16]= new InfoBox(myOptions);
   
@@ -689,7 +689,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(827, "sentier-didactique-du-bois-de-resonance-du-risoud-4-c-associ", "Association Sentier didactique du bois de r\u00e9sonance du Risoud", "Switzerland", "2022 \u2192 2023", "Risoud resonance wood learning trail", "Awareness raising | Ancestral knowledge", "risoud-resonance-wood-learning-trail");
+    myOptions.content=createInfoBoxContent(827, "adobe-logo", "Association Sentier didactique du bois de r\u00e9sonance du Risoud", "Switzerland", "2022 \u2192 2023", "Risoud resonance wood learning trail", "Awareness raising | Ancestral knowledge", "risoud-resonance-wood-learning-trail");
   
     infoWindows[67]= new InfoBox(myOptions);
   
@@ -734,7 +734,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(428, "ecotourisme-dobservation-des-bonobos-avec-mmt-dans-le-territ", "Mbou-Mon-Tour (MMT)", "Democratic Republic of the Congo (DRC)", "2022 \u2192 2024", "Support for sustainable development through the conservation and enhancement of local biodiversity", "Conservation\/restoration | Awareness raising", "support-for-sustainable-development-through-the-conservation");
+    myOptions.content=createInfoBoxContent(428, "adobe-logo", "Mbou-Mon-Tour (MMT)", "Democratic Republic of the Congo (DRC)", "2022 \u2192 2024", "Support for sustainable development through the conservation and enhancement of local biodiversity", "Conservation\/restoration | Awareness raising", "support-for-sustainable-development-through-the-conservation");
   
     infoWindows[50]= new InfoBox(myOptions);
   
@@ -779,7 +779,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(234, "agou-kpolo-plot-c-morija", "Association Morija", "Togo", "2022 \u2192 2025", "Agroforestry and green entrepreneurship", "Conservation\/restoration | Awareness raising", "agroforestry-and-green-entrepreneurship");
+    myOptions.content=createInfoBoxContent(234, "adobe-logo", "Association Morija", "Togo", "2022 \u2192 2025", "Agroforestry and green entrepreneurship", "Conservation\/restoration | Awareness raising", "agroforestry-and-green-entrepreneurship");
   
     infoWindows[18]= new InfoBox(myOptions);
   
@@ -824,7 +824,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(335, "sentier-de-la-morges-71-c-yves-burdet", "Association pour la sauvegarde de Morges (ASM)", "Switzerland", "2022 \u2192 2023", "Sentier de la Morges trail", "Awareness raising", "sentier-de-la-morges-trail");
+    myOptions.content=createInfoBoxContent(335, "adobe-logo", "Association pour la sauvegarde de Morges (ASM)", "Switzerland", "2022 \u2192 2023", "Sentier de la Morges trail", "Awareness raising", "sentier-de-la-morges-trail");
   
     infoWindows[35]= new InfoBox(myOptions);
   
@@ -869,7 +869,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(258, "site-toile-verte-givrins-c-parc-jura-vaudois", "Association du Parc naturel r\u00e9gional Jura vaudois", "Switzerland", "2022 \u2192 2026", "Toile verte", "Conservation\/restoration | Awareness raising", "toile-verte");
+    myOptions.content=createInfoBoxContent(258, "adobe-logo", "Association du Parc naturel r\u00e9gional Jura vaudois", "Switzerland", "2022 \u2192 2026", "Toile verte", "Conservation\/restoration | Awareness raising", "toile-verte");
   
     infoWindows[23]= new InfoBox(myOptions);
   
@@ -914,7 +914,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(303, "aide-7-c-aide", "Appui aux Initiatives de D\u00e9veloppement (AIDE)", "Cameroon", "2022 \u2192 2024", "Integrated management of mangrove landscapes in Douala-Ed\u00e9a National Park", "Conservation\/restoration | Awareness raising", "integrated-management-of-mangrove-landscape-in-the-douala-ed");
+    myOptions.content=createInfoBoxContent(303, "adobe-logo", "Appui aux Initiatives de D\u00e9veloppement (AIDE)", "Cameroon", "2022 \u2192 2024", "Integrated management of mangrove landscapes in Douala-Ed\u00e9a National Park", "Conservation\/restoration | Awareness raising", "integrated-management-of-mangrove-landscape-in-the-douala-ed");
   
     infoWindows[29]= new InfoBox(myOptions);
   
@@ -959,7 +959,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(274, "preservation-de-la-biodiversite-au-cap-vert-2-c-projecto-vit", "Associa\u00e7\u00e3o Projecto Vit\u00f3", "Cape Verde", "2022 \u2192 2025", "Time for conservation of endemic threatened flora in Cape Verde's islands", "Conservation\/restoration | Awareness raising", "time-for-conservation-of-endemic-threatened-flora-in-cape-ve");
+    myOptions.content=createInfoBoxContent(274, "adobe-logo", "Associa\u00e7\u00e3o Projecto Vit\u00f3", "Cape Verde", "2022 \u2192 2025", "Time for conservation of endemic threatened flora in Cape Verde's islands", "Conservation\/restoration | Awareness raising", "time-for-conservation-of-endemic-threatened-flora-in-cape-ve");
   
     infoWindows[25]= new InfoBox(myOptions);
   
@@ -1004,7 +1004,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(172, "arboretum-1-c-arboretum-national-du-vallon-de-laubonne", "Association de l\u2019Arboretum national du Vallon de l\u2019Aubonne", "Switzerland", "2022 \u2192 2026", "Improving mediation and conservation", "Awareness raising", "improving-mediation-and-conservation");
+    myOptions.content=createInfoBoxContent(172, "adobe-logo", "Association de l\u2019Arboretum national du Vallon de l\u2019Aubonne", "Switzerland", "2022 \u2192 2026", "Improving mediation and conservation", "Awareness raising", "improving-mediation-and-conservation");
   
     infoWindows[7]= new InfoBox(myOptions);
   
@@ -1049,7 +1049,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(155, "champ-daubergines-c-acpe", "Actions Communautaires pour la Protection de l\u2019Environnement (ACPE)", "Democratic Republic of the Congo (DRC)", "2022 \u2192 2025", "Supporting the reconstitution of forest cover through agro-ecological practices", "Conservation\/restoration", "supporting-the-reconstitution-of-forest-cover-through-agro-e");
+    myOptions.content=createInfoBoxContent(155, "adobe-logo", "Actions Communautaires pour la Protection de l\u2019Environnement (ACPE)", "Democratic Republic of the Congo (DRC)", "2022 \u2192 2025", "Supporting the reconstitution of forest cover through agro-ecological practices", "Conservation\/restoration", "supporting-the-reconstitution-of-forest-cover-through-agro-e");
   
     infoWindows[4]= new InfoBox(myOptions);
   
@@ -1094,7 +1094,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(355, "belo-sur-mer-pecheuse-dans-une-barque-entouree-de-paletuvier", "Blue Ventures", "Madagascar", "2022 \u2192 2023", "Blue forests", "Conservation\/restoration | Awareness raising", "blue-forests");
+    myOptions.content=createInfoBoxContent(355, "adobe-logo", "Blue Ventures", "Madagascar", "2022 \u2192 2023", "Blue forests", "Conservation\/restoration | Awareness raising", "blue-forests");
   
     infoWindows[38]= new InfoBox(myOptions);
   
@@ -1139,7 +1139,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(316, "apprentissage-c-aquaverde", "Aquaverde", "Brazil", "2022 \u2192 2022", "Reforestation and Brazil nuts", "Conservation\/restoration", "reforestation-and-brazil-nuts");
+    myOptions.content=createInfoBoxContent(316, "adobe-logo", "Aquaverde", "Brazil", "2022 \u2192 2022", "Reforestation and Brazil nuts", "Conservation\/restoration", "reforestation-and-brazil-nuts");
   
     infoWindows[31]= new InfoBox(myOptions);
   
@@ -1184,7 +1184,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(301, "staff-technique-2-c-add", "Alternatives Durables pour le D\u00e9veloppement (ADD)", "Cameroon", "2022 \u2192 2023", "Awareness raising and environmental education for young people in vocational schools and communities", "Awareness raising", "awareness-raising-and-environmental-education-for-young-peop");
+    myOptions.content=createInfoBoxContent(301, "adobe-logo", "Alternatives Durables pour le D\u00e9veloppement (ADD)", "Cameroon", "2022 \u2192 2023", "Awareness raising and environmental education for young people in vocational schools and communities", "Awareness raising", "awareness-raising-and-environmental-education-for-young-peop");
   
     infoWindows[28]= new InfoBox(myOptions);
   
@@ -1229,7 +1229,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(150, "alcp-c-alcp", "Action Lutte Contre la Pauvret\u00e9 (ALCP)", "Burkina Faso", "2022 \u2192 2025", "Agro-ecological restoration and agroforestry in the green belt of the city of Ouagadougou", "Conservation\/restoration | Awareness raising", "agro-ecological-restoration-and-agroforestry-in-the-green-be");
+    myOptions.content=createInfoBoxContent(150, "adobe-logo", "Action Lutte Contre la Pauvret\u00e9 (ALCP)", "Burkina Faso", "2022 \u2192 2025", "Agro-ecological restoration and agroforestry in the green belt of the city of Ouagadougou", "Conservation\/restoration | Awareness raising", "agro-ecological-restoration-and-agroforestry-in-the-green-be");
   
     infoWindows[3]= new InfoBox(myOptions);
   
@@ -1274,7 +1274,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(181, "brulis-c-coeur-de-foret", "C\u0153ur de For\u00eat", "Indonesia", "2022 \u2192 2025", "Forest restoration and preservation on the island of Flores, Indonesia", "Conservation\/restoration | Awareness raising", "forest-restoration-and-preservation-on-the-island-of-flores");
+    myOptions.content=createInfoBoxContent(181, "adobe-logo", "C\u0153ur de For\u00eat", "Indonesia", "2022 \u2192 2025", "Forest restoration and preservation on the island of Flores, Indonesia", "Conservation\/restoration | Awareness raising", "forest-restoration-and-preservation-on-the-island-of-flores");
   
     infoWindows[8]= new InfoBox(myOptions);
   
@@ -1319,7 +1319,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(244, "assemblee-feminine-de-conservation-des-habitats-c-istituto-o", "Istituto Oikos", "Tanzania", "2022 \u2192 2024", "Mountain farmers and savannah pastoralists: conserving sustainable livelihoods in East Africa", "Conservation\/restoration | Awareness raising", "mountain-farmers-and-savannah-pastoralists-conserving-sustai");
+    myOptions.content=createInfoBoxContent(244, "adobe-logo", "Istituto Oikos", "Tanzania", "2022 \u2192 2024", "Mountain farmers and savannah pastoralists: conserving sustainable livelihoods in East Africa", "Conservation\/restoration | Awareness raising", "mountain-farmers-and-savannah-pastoralists-conserving-sustai");
   
     infoWindows[21]= new InfoBox(myOptions);
   
@@ -1364,7 +1364,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(406, "journee-de-plantation-avec-le-comite-mangrove-4-c-fama-reyan", "Alliance internationale pour la gestion de l\u2019eau de pluie (IRHA)", "Senegal", "2021 \u2192 2024", "Sea forest", "Conservation\/restoration | Awareness raising", "sea-forest");
+    myOptions.content=createInfoBoxContent(406, "adobe-logo", "Alliance internationale pour la gestion de l\u2019eau de pluie (IRHA)", "Senegal", "2021 \u2192 2024", "Sea forest", "Conservation\/restoration | Awareness raising", "sea-forest");
   
     infoWindows[48]= new InfoBox(myOptions);
   
@@ -1409,7 +1409,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(454, "action-pedagogique-de-terrain-parcelle-de-veranne-le-mantel", "Robin du Bois", "France", "2021 \u2192 2023", "Save the Pilat forests", "Conservation\/restoration", "save-the-pilat-forests");
+    myOptions.content=createInfoBoxContent(454, "adobe-logo", "Robin du Bois", "France", "2021 \u2192 2023", "Save the Pilat forests", "Conservation\/restoration", "save-the-pilat-forests");
   
     infoWindows[56]= new InfoBox(myOptions);
   
@@ -1454,7 +1454,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(288, "les-femmes-de-la-cooperative-essodounissi-lavent-des-noix-de", "V\u00e9t\u00e9rinaires Sans Fronti\u00e8res Suisse (VSF-Suisse)", "Togo", "2021 \u2192 2024", "MiKaGo", "Conservation\/restoration | Awareness raising | Ancestral knowledge", "mikago");
+    myOptions.content=createInfoBoxContent(288, "adobe-logo", "V\u00e9t\u00e9rinaires Sans Fronti\u00e8res Suisse (VSF-Suisse)", "Togo", "2021 \u2192 2024", "MiKaGo", "Conservation\/restoration | Awareness raising | Ancestral knowledge", "mikago");
   
     infoWindows[27]= new InfoBox(myOptions);
   
@@ -1499,7 +1499,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(269, "parc-naturel-du-jorat-2-c-raphael-dupertuis", "Parc naturel du Jorat", "Switzerland", "2021 \u2192 2025", "Reception infrastructure at the Parc naturel du Jorat", "Awareness raising", "reception-infrastructure-at-the-parc-naturel-du-jorat");
+    myOptions.content=createInfoBoxContent(269, "adobe-logo", "Parc naturel du Jorat", "Switzerland", "2021 \u2192 2025", "Reception infrastructure at the Parc naturel du Jorat", "Awareness raising", "reception-infrastructure-at-the-parc-naturel-du-jorat");
   
     infoWindows[24]= new InfoBox(myOptions);
   
@@ -1544,7 +1544,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(239, "assemblee-c-nouvelle-planete", "Nouvelle Plan\u00e8te", "Peru", "2021 \u2192 2024", "Protection of the forest through the official establishment of indigenous communities", "Conservation\/restoration", "protection-de-la-foret-par-la-titularisation-fonciere-de-com");
+    myOptions.content=createInfoBoxContent(239, "adobe-logo", "Nouvelle Plan\u00e8te", "Peru", "2021 \u2192 2024", "Protection of the forest through the official establishment of indigenous communities", "Conservation\/restoration", "protection-de-la-foret-par-la-titularisation-fonciere-de-com");
   
     infoWindows[20]= new InfoBox(myOptions);
   
@@ -1589,7 +1589,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(422, "fleur-de-p-greuteri-3-c-alessandro-s-gristina", "Jardin Botanique de l\u2019Universit\u00e9 de Fribourg", "Italy", "2021 \u2192 2024", "Conservation of threatened woody species", "Conservation\/restoration | Awareness raising", "conservation-of-threatened-woody-species");
+    myOptions.content=createInfoBoxContent(422, "adobe-logo", "Jardin Botanique de l\u2019Universit\u00e9 de Fribourg", "Italy", "2021 \u2192 2024", "Conservation of threatened woody species", "Conservation\/restoration | Awareness raising", "conservation-of-threatened-woody-species");
   
     infoWindows[49]= new InfoBox(myOptions);
   
@@ -1634,7 +1634,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(346, "autorite-nationale-de-reglementation-pharmaceutique-c-promet", "Fondation Biovision", "Uganda", "2021 \u2192 2024", "Mpigi forest school", "Conservation\/restoration | Awareness raising | Ancestral knowledge", "mpigi-forest-school");
+    myOptions.content=createInfoBoxContent(346, "adobe-logo", "Fondation Biovision", "Uganda", "2021 \u2192 2024", "Mpigi forest school", "Conservation\/restoration | Awareness raising | Ancestral knowledge", "mpigi-forest-school");
   
     infoWindows[36]= new InfoBox(myOptions);
   
@@ -1679,7 +1679,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(207, "mosaique-de-petits-milieux-secs-et-humides-crassier-c-esep", "Association des Amis de l\u2019ESEP (\u00c9tablissement scolaire Elisabeth de Portes)", "Switzerland", "2021 \u2192 2027", "", "Conservation\/restoration | Awareness raising", "13");
+    myOptions.content=createInfoBoxContent(207, "adobe-logo", "Association des Amis de l\u2019ESEP (\u00c9tablissement scolaire Elisabeth de Portes)", "Switzerland", "2021 \u2192 2027", "", "Conservation\/restoration | Awareness raising", "13");
   
     infoWindows[13]= new InfoBox(myOptions);
   
@@ -1724,7 +1724,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(210, "biche-burtigny-c-open-mind", "Commune de Burtigny", "Switzerland", "2021 \u2192 2024", "Fruit-producing edges of the Grandes Tattes forest", "Conservation\/restoration", "fruit-producing-edges-of-the-grandes-tattes-forest-14");
+    myOptions.content=createInfoBoxContent(210, "adobe-logo", "Commune de Burtigny", "Switzerland", "2021 \u2192 2024", "Fruit-producing edges of the Grandes Tattes forest", "Conservation\/restoration", "fruit-producing-edges-of-the-grandes-tattes-forest-14");
   
     infoWindows[14]= new InfoBox(myOptions);
   
@@ -1769,7 +1769,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(309, "pepiniere-1-c-ubiratan-g-surui", "Aquaverde", "Brazil", "2021 \u2192 2022", "Reinforcing the traditional medicinal plant culture and reforestation of the Surui territory", "Conservation\/restoration | Ancestral knowledge", "reinforcing-the-traditional-medicinal-plant-culture-and-refo");
+    myOptions.content=createInfoBoxContent(309, "adobe-logo", "Aquaverde", "Brazil", "2021 \u2192 2022", "Reinforcing the traditional medicinal plant culture and reforestation of the Surui territory", "Conservation\/restoration | Ancestral knowledge", "reinforcing-the-traditional-medicinal-plant-culture-and-refo");
   
     infoWindows[30]= new InfoBox(myOptions);
   
@@ -1814,7 +1814,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(462, "reforestation-et-agroforesterie-sur-le-plateau-de-bateke-4-c", "Secodev", "Democratic Republic of the Congo (DRC)", "2021 \u2192 2023", "Reforestation and agroforestry on the Bat\u00e9k\u00e9 plateau", "Conservation\/restoration | Awareness raising", "reforestation-and-agroforestry-on-the-bateke-plateau");
+    myOptions.content=createInfoBoxContent(462, "adobe-logo", "Secodev", "Democratic Republic of the Congo (DRC)", "2021 \u2192 2023", "Reforestation and agroforestry on the Bat\u00e9k\u00e9 plateau", "Conservation\/restoration | Awareness raising", "reforestation-and-agroforestry-on-the-bateke-plateau");
   
     infoWindows[57]= new InfoBox(myOptions);
   
@@ -1859,7 +1859,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(383, "arbres-adultes-a-dashtijum-c-fauna-flora-international", "Fauna & Flora International (FFI)", "Tadjikistan", "2020 \u2192 2024", "Supporting local communities through the conservation of ancient fruit and nut forests", "Conservation\/restoration", "supporting-local-communities-through-the-conservation-of-anc");
+    myOptions.content=createInfoBoxContent(383, "adobe-logo", "Fauna & Flora International (FFI)", "Tadjikistan", "2020 \u2192 2024", "Supporting local communities through the conservation of ancient fruit and nut forests", "Conservation\/restoration", "supporting-local-communities-through-the-conservation-of-anc");
   
     infoWindows[43]= new InfoBox(myOptions);
   
@@ -1904,7 +1904,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(402, "clapiers-de-lapins-c-inter-aide", "Inter Aide", "Malawi", "2020 \u2192 2024", "Improving the lives of rural communities through the planting of agroforestry groves and by adopting agro-ecological practices", "Conservation\/restoration | Awareness raising", "improving-the-lives-of-rural-communities-through-the-plantin");
+    myOptions.content=createInfoBoxContent(402, "adobe-logo", "Inter Aide", "Malawi", "2020 \u2192 2024", "Improving the lives of rural communities through the planting of agroforestry groves and by adopting agro-ecological practices", "Conservation\/restoration | Awareness raising", "improving-the-lives-of-rural-communities-through-the-plantin");
   
     infoWindows[47]= new InfoBox(myOptions);
   
@@ -1949,7 +1949,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(374, "femme-plantant-un-arbre-1-c-fairventures", "Fairventures Worldwide", "Uganda", "2020 \u2192 2023", "Sustainable mass timber construction for resilient rural economies", "Conservation\/restoration", "sustainable-mass-timber-construction-for-resilient-rural-eco");
+    myOptions.content=createInfoBoxContent(374, "adobe-logo", "Fairventures Worldwide", "Uganda", "2020 \u2192 2023", "Sustainable mass timber construction for resilient rural economies", "Conservation\/restoration", "sustainable-mass-timber-construction-for-resilient-rural-eco");
   
     infoWindows[41]= new InfoBox(myOptions);
   
@@ -1994,7 +1994,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(396, "arbre-indigene-plante-dans-une-zone-deboisee-2-c-igh", "Itombwe G\u00e9n\u00e9ration pour l\u2019Humanit\u00e9 (IGH)", "Democratic Republic of the Congo (DRC)", "2020 \u2192 2023", "Itombwe forest conservation", "Conservation\/restoration | Awareness raising", "itombwe-forest-conservation");
+    myOptions.content=createInfoBoxContent(396, "adobe-logo", "Itombwe G\u00e9n\u00e9ration pour l\u2019Humanit\u00e9 (IGH)", "Democratic Republic of the Congo (DRC)", "2020 \u2192 2023", "Itombwe forest conservation", "Conservation\/restoration | Awareness raising", "itombwe-forest-conservation");
   
     infoWindows[46]= new InfoBox(myOptions);
   
@@ -2039,7 +2039,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(228, "madame-bien-village-de-bam-c-gret", "Gret", "Vietnam", "2020 \u2192 2024", "Empowering ethnic minority women through sustainable forest management in nature reserves", "Conservation\/restoration | Awareness raising", "empowering-ethnic-minority-women-for-sustainable-forest-mana");
+    myOptions.content=createInfoBoxContent(228, "adobe-logo", "Gret", "Vietnam", "2020 \u2192 2024", "Empowering ethnic minority women through sustainable forest management in nature reserves", "Conservation\/restoration | Awareness raising", "empowering-ethnic-minority-women-for-sustainable-forest-mana");
   
     infoWindows[17]= new InfoBox(myOptions);
   
@@ -2084,7 +2084,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(368, "communaute-locale-2-c-experts-solidaires", "Experts-Solidaires", "Benin", "2020 \u2192 2022", "Integrated forest resource management", "Conservation\/restoration | Awareness raising", "integrated-forest-resource-management");
+    myOptions.content=createInfoBoxContent(368, "adobe-logo", "Experts-Solidaires", "Benin", "2020 \u2192 2022", "Integrated forest resource management", "Conservation\/restoration | Awareness raising", "integrated-forest-resource-management");
   
     infoWindows[40]= new InfoBox(myOptions);
   
@@ -2129,7 +2129,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(438, "plantation-2-c-pragya", "Pragya", "India", "2020 \u2192 2024", "Ancestral knowledge preservation, conservation and cultivation of endangered medicinal and aromatic plants in the Himalayas", "Conservation\/restoration | Awareness raising | Ancestral knowledge", "ancestral-knowledge-preservation-conservation-and-cultivatio");
+    myOptions.content=createInfoBoxContent(438, "adobe-logo", "Pragya", "India", "2020 \u2192 2024", "Ancestral knowledge preservation, conservation and cultivation of endangered medicinal and aromatic plants in the Himalayas", "Conservation\/restoration | Awareness raising | Ancestral knowledge", "ancestral-knowledge-preservation-conservation-and-cultivatio");
   
     infoWindows[53]= new InfoBox(myOptions);
   
@@ -2174,7 +2174,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(280, "apprentissage-c-darren-cresswell", "The National Forest Company", "England", "2020 \u2192 2024", "Creating a forest for learning II", "Awareness raising", "creating-a-forest-for-learning-ii");
+    myOptions.content=createInfoBoxContent(280, "adobe-logo", "The National Forest Company", "England", "2020 \u2192 2024", "Creating a forest for learning II", "Awareness raising", "creating-a-forest-for-learning-ii");
   
     infoWindows[26]= new InfoBox(myOptions);
   
@@ -2219,7 +2219,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(188, "creation-de-meuble-en-r-vinifera-c-didier-roguet", "Conservatoire et Jardin botaniques de la Ville de Gen\u00e8ve (CJBG)", "Benin | Ghana | C\u00f4te d\u2019Ivoire", "2020 \u2192 2027", "Multipalms", "Conservation\/restoration | Awareness raising", "multipalms");
+    myOptions.content=createInfoBoxContent(188, "adobe-logo", "Conservatoire et Jardin botaniques de la Ville de Gen\u00e8ve (CJBG)", "Benin | Ghana | C\u00f4te d\u2019Ivoire", "2020 \u2192 2027", "Multipalms", "Conservation\/restoration | Awareness raising", "multipalms");
   
     infoWindows[10]= new InfoBox(myOptions);
   
@@ -2264,7 +2264,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(480, "dundreggan-rewilding-centre-c-paul-campbell-photography", "Trees for Life", "Scotland", "2020 \u2192 2023", "Dundreggan Rewilding Centre", "Awareness raising | Ancestral knowledge", "dundreggan-rewilding-centre");
+    myOptions.content=createInfoBoxContent(480, "adobe-logo", "Trees for Life", "Scotland", "2020 \u2192 2023", "Dundreggan Rewilding Centre", "Awareness raising | Ancestral knowledge", "dundreggan-rewilding-centre");
   
     infoWindows[60]= new InfoBox(myOptions);
   
@@ -2309,7 +2309,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(433, "classe-dapprentissage-orangutan-haven-c-paneco", "Fondation PanEco", "Indonesia", "2020 \u2192 2023", "Environmental education centres", "Conservation\/restoration | Awareness raising", "environmental-education-centres");
+    myOptions.content=createInfoBoxContent(433, "adobe-logo", "Fondation PanEco", "Indonesia", "2020 \u2192 2023", "Environmental education centres", "Conservation\/restoration | Awareness raising", "environmental-education-centres");
   
     infoWindows[52]= new InfoBox(myOptions);
   
@@ -2354,7 +2354,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(322, "construction-2-c-arutam", "Arutam Z\u00e9ro D\u00e9forestation", "Mexico", "2020 \u2192 2022", "Support for traditional Mayan agriculture and raising awareness of family nutrition", "Conservation\/restoration | Awareness raising | Ancestral knowledge", "support-for-traditional-mayan-agriculture-and-raising-awaren");
+    myOptions.content=createInfoBoxContent(322, "adobe-logo", "Arutam Z\u00e9ro D\u00e9forestation", "Mexico", "2020 \u2192 2022", "Support for traditional Mayan agriculture and raising awareness of family nutrition", "Conservation\/restoration | Awareness raising | Ancestral knowledge", "support-for-traditional-mayan-agriculture-and-raising-awaren");
   
     infoWindows[32]= new InfoBox(myOptions);
   
@@ -2399,7 +2399,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(467, "abreuvoirs-pour-les-animaux-c-shen", "SHEN", "Armenia", "2019 \u2192 2023", "Afforestation of Chambarak and Ttujur communities", "Conservation\/restoration | Awareness raising", "afforestation-of-chambarak-and-ttujur-communities");
+    myOptions.content=createInfoBoxContent(467, "adobe-logo", "SHEN", "Armenia", "2019 \u2192 2023", "Afforestation of Chambarak and Ttujur communities", "Conservation\/restoration | Awareness raising", "afforestation-of-chambarak-and-ttujur-communities");
   
     infoWindows[58]= new InfoBox(myOptions);
   
@@ -2444,7 +2444,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(472, "ecole-a-ciel-ouvert-1-c-gabriela-furer-silviva", "Fondation Silviva", "Switzerland", "2019 \u2192 2022", "The Forester\u2019s world", "Awareness raising", "the-foresters-world");
+    myOptions.content=createInfoBoxContent(472, "adobe-logo", "Fondation Silviva", "Switzerland", "2019 \u2192 2022", "The Forester\u2019s world", "Awareness raising", "the-foresters-world");
   
     infoWindows[59]= new InfoBox(myOptions);
   
@@ -2489,7 +2489,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(823, "grand-hapalemur-4-c-sebastien-meys", "Helpsimus (Association fran\u00e7aise pour la sauvegarde du grand hapal\u00e9mur)", "Madagascar", "2019 \u2192 2023", "Stepping up protection for Madagascar\u2019s largest wild population of greater bamboo lemurs", "Conservation\/restoration | Awareness raising", "stepping-up-protection-for-madagascars-largest-wild-populati");
+    myOptions.content=createInfoBoxContent(823, "adobe-logo", "Helpsimus (Association fran\u00e7aise pour la sauvegarde du grand hapal\u00e9mur)", "Madagascar", "2019 \u2192 2023", "Stepping up protection for Madagascar\u2019s largest wild population of greater bamboo lemurs", "Conservation\/restoration | Awareness raising", "stepping-up-protection-for-madagascars-largest-wild-populati");
   
     infoWindows[45]= new InfoBox(myOptions);
   
@@ -2534,7 +2534,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(447, "grand-milieu-sec-c-reseau-ecologique-la-frontiere", "R\u00e9seau \u00e9cologique La Fronti\u00e8re", "Switzerland", "2019 \u2192 2022", "Landscape and biodiversity", "Conservation\/restoration | Awareness raising", "landscape-and-biodiversity");
+    myOptions.content=createInfoBoxContent(447, "adobe-logo", "R\u00e9seau \u00e9cologique La Fronti\u00e8re", "Switzerland", "2019 \u2192 2022", "Landscape and biodiversity", "Conservation\/restoration | Awareness raising", "landscape-and-biodiversity");
   
     infoWindows[55]= new InfoBox(myOptions);
   
@@ -2579,7 +2579,7 @@ function getCurrentLanguage() {
       
     
     var myOptions = popupoption;
-    myOptions.content=createInfoBoxContent(193, "biodiversite-1-c-daisy-tarrier", "Envol Vert", "Colombia", "2019 \u2192 2025", "Preserving the last dry forests through agroforestry", "Conservation\/restoration | Awareness raising", "preserver-les-dernieres-forets-seches-par-lagroforesterie");
+    myOptions.content=createInfoBoxContent(193, "adobe-logo", "Envol Vert", "Colombia", "2019 \u2192 2025", "Preserving the last dry forests through agroforestry", "Conservation\/restoration | Awareness raising", "preserver-les-dernieres-forets-seches-par-lagroforesterie");
   
     infoWindows[11]= new InfoBox(myOptions);
   
@@ -2628,7 +2628,7 @@ function getCurrentLanguage() {
               imagePath: '/assets/images/',
               styles:[
                   {
-                      url: 'https://content.da.live/audemars-piguet/arbres-fondationsaudemarspiguet/assets/images/closter1.png',
+                      url: 'https://main--map-demo--meejain.aem.page/assets/images/closter1.png',
                       width: 56,
                       height: 56,
                       textColor: '#ffffff',

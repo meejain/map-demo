@@ -38,6 +38,9 @@
 
   /* nav height */
   --nav-height: 64px;
+
+  /* map */
+  --map-box-bg: rgb(159 165 157 / 90%);
 }
 
 /* fallback fonts */
