@@ -6,6 +6,45 @@ import {
 } from '../../scripts/dom-helpers.js';
 import { applyFadeUpAnimation } from '../../scripts/utils.js';
 
+// Shared function for map category filtering
+function filterMapByCategory(categoryId) {
+  // Check if map variables exist and run filtering logic
+  if (window.map && window.markers && window.markerCluster && window.bounds) {
+    window.bounds = new google.maps.LatLngBounds();
+    const markerstocluster = [];
+    window.markerCluster.clearMarkers();
+
+    // Close all open popups
+    window.infoWindows.forEach((elem) => {
+      if (elem) {
+        elem.close();
+      }
+    });
+
+    window.markers.forEach((marker) => {
+      const catmarkers = marker.category;
+
+      if (categoryId === 'all') {
+        marker.setMap(window.map);
+        markerstocluster.push(marker);
+        window.bounds.extend(marker.position);
+      } else if (catmarkers.search(categoryId) !== -1) {
+        marker.setMap(window.map);
+        markerstocluster.push(marker);
+        window.bounds.extend(marker.position);
+      } else {
+        marker.setMap(null);
+      }
+    });
+
+    window.markerCluster.addMarkers(markerstocluster);
+    window.map.fitBounds(window.bounds);
+  }
+}
+
+// Make the function globally available
+window.filterMapByCategory = filterMapByCategory;
+
 function getVisibleCardCount(numCards) {
   let visibleCount = 1;
   const viewportWidth = window.innerWidth;
@@ -145,38 +184,8 @@ export default function decorate(block) {
             // Add active class to clicked anchor
             anchor.classList.add('active');
 
-            // Check if map variables exist and run filtering logic
-            if (window.map && window.markers && window.markerCluster && window.bounds) {
-              window.bounds = new google.maps.LatLngBounds();
-              const markerstocluster = [];
-              window.markerCluster.clearMarkers();
-
-              // Close all open popups
-              window.infoWindows.forEach((elem) => {
-                if (elem) {
-                  elem.close();
-                }
-              });
-
-              window.markers.forEach((marker) => {
-                const catmarkers = marker.category;
-
-                if (myslectcat === 'all') {
-                  marker.setMap(window.map);
-                  markerstocluster.push(marker);
-                  window.bounds.extend(marker.position);
-                } else if (catmarkers.search(myslectcat) !== -1) {
-                  marker.setMap(window.map);
-                  markerstocluster.push(marker);
-                  window.bounds.extend(marker.position);
-                } else {
-                  marker.setMap(null);
-                }
-              });
-
-              window.markerCluster.addMarkers(markerstocluster);
-              window.map.fitBounds(window.bounds);
-            }
+            // Use the shared filtering function
+            filterMapByCategory(myslectcat);
           });
 
           // For "View all" or "Tous" (first card), wrap the p element
@@ -227,38 +236,8 @@ export default function decorate(block) {
               originalAnchor.classList.add('active');
             }
 
-            // Check if map variables exist and run filtering logic
-            if (window.map && window.markers && window.markerCluster && window.bounds) {
-              window.bounds = new google.maps.LatLngBounds();
-              const markerstocluster = [];
-              window.markerCluster.clearMarkers();
-
-              // Close all open popups
-              window.infoWindows.forEach((elem) => {
-                if (elem) {
-                  elem.close();
-                }
-              });
-
-              window.markers.forEach((marker) => {
-                const catmarkers = marker.category;
-
-                if (myslectcat === 'all') {
-                  marker.setMap(window.map);
-                  markerstocluster.push(marker);
-                  window.bounds.extend(marker.position);
-                } else if (catmarkers.search(myslectcat) !== -1) {
-                  marker.setMap(window.map);
-                  markerstocluster.push(marker);
-                  window.bounds.extend(marker.position);
-                } else {
-                  marker.setMap(null);
-                }
-              });
-
-              window.markerCluster.addMarkers(markerstocluster);
-              window.map.fitBounds(window.bounds);
-            }
+            // Use the shared filtering function
+            filterMapByCategory(myslectcat);
           });
         }
 

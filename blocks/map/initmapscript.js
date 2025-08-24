@@ -3282,38 +3282,9 @@ function getCurrentLanguage() {
                   clickedLink.classList.add('active');
                   console.log('Vanilla JS: Active class updated');
                   
-                  // Trigger the same map filtering logic
-                  if (window.map && window.markers && window.markerCluster) {
-                      bounds = new google.maps.LatLngBounds();
-                      markerstocluster = [];
-                      markerCluster.clearMarkers();
-                           
-                     // Close all open popups
-                      infoWindows.forEach(function(elem) {
-                          if (elem) {
-                              elem.close();
-                          }
-                      });         
-  
-                      markers.forEach(function(marker){
-                          var catmarkers = marker.category;
-  
-                          if(myslectcat == "all"){
-                              marker.setMap(map);
-                              markerstocluster.push(marker);
-                              bounds.extend(marker.position);
-                          } else {
-                              if(catmarkers.search(myslectcat) != -1 ){ 
-                                  marker.setMap(map);
-                                  markerstocluster.push(marker);
-                                  bounds.extend(marker.position);
-                              } else {
-                                  marker.setMap(null);
-                              }
-                          }
-                      });
-                      markerCluster.addMarkers(markerstocluster);
-                      map.fitBounds(bounds);
+                                    // Use the shared filtering function
+                  if (window.filterMapByCategory) {
+                      window.filterMapByCategory(myslectcat);
                       console.log('Vanilla JS: Map filtering completed');
                   }
               }
