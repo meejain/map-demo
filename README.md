@@ -139,12 +139,7 @@ const categoryMapping = {
 
 ## 🔧 Quick Setup
 
-### 1. Installation
-```sh
-npm install
-```
-
-### 2. Google Maps API Key
+### 1. Google Maps API Key
 Add your API key to `/config.js`:
 ```javascript
 const config = {
@@ -156,7 +151,7 @@ const config = {
 
 Get your API key from [Google Cloud Console](https://console.cloud.google.com/) and enable the Maps JavaScript API.
 
-### 3. Customizing Content
+### 2. Customizing Content
 
 **Replace placeholder content in `initmapscript.js`**:
 
@@ -173,6 +168,14 @@ Get your API key from [Google Cloud Console](https://console.cloud.google.com/) 
 ```sh
 aem up
 # Navigate to http://localhost:3000/your-map-page
+```
+
+**Note**: No build process or `npm install` required! This project serves static files directly.
+
+**Optional**: Run `npm install` only if you want to use the linting tools during development:
+```sh
+npm install  # Only for linting tools (optional)
+npm run lint # Check code style
 ```
 
 ### Common Tasks
