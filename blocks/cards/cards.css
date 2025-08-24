@@ -4,7 +4,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  gap: 24px;
 }
 
 .cards.listing > ul {
@@ -361,7 +361,7 @@ body.biencommun .cards.map-category ul li:first-child p {
 
 .cards.map-category ul {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 0;
+  gap: 0;
 }
 
 .cards.map-category ul li a[data-categoryid]:not([data-categoryid="category_10"]) span:has(img) {

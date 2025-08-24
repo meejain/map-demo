@@ -1,6 +1,6 @@
 import { div } from '../../scripts/dom-helpers.js';
 import { getPathSegments } from '../../scripts/utils.js';
-import { config } from '../../config.js';
+import config from '../../config.js';
 
 async function loadScript(src, attrs) {
   return new Promise((resolve, reject) => {
