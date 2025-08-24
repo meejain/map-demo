@@ -74,6 +74,15 @@ function getCurrentLanguage() {
     }
   }
   
+  // Utility function to close all open InfoWindows
+  function closeAllInfoWindows() {
+    infoWindows.forEach((elem) => {
+      if (elem) {
+        elem.close();
+      }
+    });
+  }
+
   // Function to create InfoBox content with localized links
   function createInfoBoxContent(imageId, imageName, partner, country, dateRange, title, category, projectSlug) {
     const language = getCurrentLanguage();
@@ -340,11 +349,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -356,14 +361,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -395,11 +394,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -411,14 +406,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -450,11 +439,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -466,14 +451,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -505,11 +484,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -521,14 +496,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -560,11 +529,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -576,14 +541,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -615,11 +574,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -631,14 +586,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -670,11 +619,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -686,14 +631,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -725,11 +664,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -741,14 +676,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -780,11 +709,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -796,14 +721,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -835,11 +754,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -851,14 +766,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -890,11 +799,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -906,14 +811,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -945,11 +844,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -961,14 +856,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1000,11 +889,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1016,14 +901,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1055,11 +934,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1071,14 +946,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1110,11 +979,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1126,14 +991,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1165,11 +1024,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1181,14 +1036,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1220,11 +1069,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1236,14 +1081,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1275,11 +1114,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1291,14 +1126,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1330,11 +1159,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1346,14 +1171,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1385,11 +1204,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1401,14 +1216,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1440,11 +1249,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1456,14 +1261,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1495,11 +1294,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1511,14 +1306,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1550,11 +1339,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1566,14 +1351,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1605,11 +1384,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1621,14 +1396,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1660,11 +1429,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1676,14 +1441,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1715,11 +1474,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1731,14 +1486,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1770,11 +1519,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1786,14 +1531,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1825,11 +1564,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1841,14 +1576,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1880,11 +1609,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1896,14 +1621,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1935,11 +1654,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -1951,14 +1666,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -1990,11 +1699,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2006,14 +1711,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2045,11 +1744,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2061,14 +1756,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2100,11 +1789,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2116,14 +1801,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2155,11 +1834,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2171,14 +1846,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2210,11 +1879,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2226,14 +1891,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2265,11 +1924,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2281,14 +1936,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2320,11 +1969,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2336,14 +1981,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2375,11 +2014,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2391,14 +2026,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2430,11 +2059,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2446,14 +2071,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2485,11 +2104,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2501,14 +2116,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2540,11 +2149,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2556,14 +2161,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2595,11 +2194,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2611,14 +2206,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2650,11 +2239,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2666,14 +2251,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2705,11 +2284,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2721,14 +2296,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2760,11 +2329,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2776,14 +2341,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2815,11 +2374,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2831,14 +2386,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2870,11 +2419,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2886,14 +2431,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2925,11 +2464,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2941,14 +2476,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -2980,11 +2509,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -2996,14 +2521,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -3035,11 +2554,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -3051,14 +2566,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -3090,11 +2599,7 @@ function getCurrentLanguage() {
     if(!isTouchDevice){
       
      marker.addListener('mouseover', function() {
-      $.each(infoWindows, function(key, elem){
-        if(elem){
-      elem.close();
-        }
-      });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
       });  
       
@@ -3106,14 +2611,8 @@ function getCurrentLanguage() {
       
       
     marker.addListener('click', function() {
-      
-    $.each(infoWindows, function(key, elem){
-      if(elem){
-    elem.close();
-      }
-    });
+      closeAllInfoWindows();
       infoWindows[this.item].open(map, this);
-    
     });  
       
       
@@ -3206,56 +2705,7 @@ function getCurrentLanguage() {
               }
           }, 2000); // Wait 2 seconds for cards to load
   
-           $(document).on("click", "a.works_categorylink", function(e){
-          console.log('jQuery: Category link clicked!', this);
-          e.preventDefault();
-          // Let event bubble normally
-  
-          var myslectcat=$(this).data('categoryid');
-          console.log('Selected category:', myslectcat);
-  
-          $('a.works_categorylink').removeClass("active");
-          $(this).addClass("active");
-          console.log('Active class updated');
-  
-          bounds = new google.maps.LatLngBounds();
-          markerstocluster = [];
-          markerCluster.clearMarkers();
-               
-         // Fermer toutes les popups ouvertes
-          $.each(infoWindows, function(key, elem) {
-              if (elem) {
-                  elem.close();
-              }
-          });         
-  
-          $.each(markers, function(key, marker){
-          var catmarkers=marker.category;
-  
-          if(myslectcat=="all"){
-                  marker.setMap(map);
-                  markerstocluster.push(marker);
-                     bounds.extend(marker.position);
-          } else {
-  
-  
-              if(catmarkers.search(myslectcat) != -1 ){ 
-                  marker.setMap(map);
-                  markerstocluster.push(marker);
-                      bounds.extend(marker.position);
-              }else{
-                  marker.setMap(null);
-              }
-          }
-  
-          });
-          markerCluster.addMarkers(markerstocluster);
-           map.fitBounds(bounds);
-                 
-  
-          }); 
-  
-          // Alternative vanilla JS event handler in case jQuery doesn't work
+                     // Vanilla JS event handler for category filtering
           document.addEventListener('click', function(e) {
               console.log('Document click detected on:', e.target);
               

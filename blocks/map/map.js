@@ -36,8 +36,6 @@ async function googleMapLoader(nonce, locale) {
 }
 
 async function loadMapScripts(nonce) {
-  // Load jQuery first (required by initmapscript.js)
-  await loadScript('https://code.jquery.com/jquery-3.7.1.min.js');
   // Load initmapscript.js first so it defines initMap()
   await loadScript('/blocks/map/initmapscript.js', nonce);
 

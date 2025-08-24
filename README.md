@@ -52,7 +52,6 @@ flowchart LR
     
     C --> D["`**Dependency Loading**`"]
     
-    D --> E["`**jQuery**`"]
     D --> F["`**initmapscript.js**
     +initMap() function`"]
     D --> G["`**mapstyles.js**
@@ -60,9 +59,8 @@ flowchart LR
     D --> H["`**markerclusterer.js**
     +Clustering lib`"]
     
-    E --> I["`**Google Maps API**
+    F --> I["`**Google Maps API**
     callback=initMap`"]
-    F --> I
     G --> I
     H --> I
     
@@ -119,11 +117,12 @@ flowchart LR
 - `generateNonce()`: Creates security nonce for script loading
 
 **Dependency Loading Order**:
-1. jQuery (required by legacy code in initmapscript.js)
-2. initmapscript.js (defines `initMap()` function)
-3. mapstyles.js (styling configuration)
-4. markerclusterer.js (clustering functionality)
-5. Google Maps API (triggers `initMap()` callback)
+1. initmapscript.js (defines `initMap()` function)
+2. mapstyles.js (styling configuration)  
+3. markerclusterer.js (clustering functionality)
+4. Google Maps API (triggers `initMap()` callback)
+
+> ✅ **Modern JavaScript**: This implementation uses vanilla JavaScript with no external dependencies like jQuery, ensuring better performance and smaller bundle size.
 
 ### 🗺️ initmapscript.js - Core Map Logic
 **Purpose**: Map initialization, marker creation, and business logic
@@ -371,10 +370,11 @@ infoWindows[uniqueId] = new InfoBox(popupOptions);
 
 ## 🚀 Performance Optimizations
 
-### 1. Script Loading
+### 1. Script Loading & Modern JavaScript
 - **Sequential loading**: Prevents dependency conflicts
-- **Async/defer**: Non-blocking script loading
-- **CDN usage**: Fast jQuery loading from Google CDN
+- **Async/defer**: Non-blocking script loading  
+- **No jQuery dependency**: Eliminated 34KB+ library, faster initial load
+- **Modern ES6+ features**: Native `forEach()`, arrow functions, `const/let`
 
 ### 2. Marker Clustering
 - **Reduces DOM elements**: Clusters nearby markers
@@ -473,10 +473,10 @@ When contributing to the map system:
 - **Advanced filtering**: Multiple category selection
 
 ### Technical Improvements
-- **Modern JavaScript**: Convert to ES6 modules
 - **TypeScript support**: Add type definitions
-- **Testing framework**: Automated testing for map functionality
-- **Bundle optimization**: Reduce initial load size
+- **Testing framework**: Automated testing for map functionality  
+- **ES6 modules**: Convert to modern module system
+- **Bundle optimization**: Further reduce initial load size
 
 ---
 
