@@ -8,5 +8,5 @@ helix-importer-ui
 *.bak
 .idea
 
-# Configuration files with sensitive data
-config.js
+# Sensitive local config (if you create config.local.js)
+config.local.js
