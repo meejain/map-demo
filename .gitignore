@@ -7,3 +7,6 @@ helix-importer-ui
 .DS_Store
 *.bak
 .idea
+
+# Sensitive local config (if you create config.local.js)
+config.local.js
