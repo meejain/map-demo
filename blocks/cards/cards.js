@@ -136,10 +136,10 @@ export default function decorate(block) {
     const categoryMapping = {
       'View all': { categoryId: 'all', isActive: true },
       Tous: { categoryId: 'all', isActive: true },
-      conservation: { categoryId: 'category_3' },
-      awareness: { categoryId: 'category_4' },
-      preservation: { categoryId: 'category_5' },
-      OD: { categoryId: 'category_10' },
+      option1: { categoryId: 'category_3' },
+      option2: { categoryId: 'category_4' },
+      option3: { categoryId: 'category_5' },
+      option4: { categoryId: 'category_10' },
     };
 
     ul.querySelectorAll('li').forEach((li) => {
