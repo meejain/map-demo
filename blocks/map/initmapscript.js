@@ -7,72 +7,24 @@ function getCurrentLanguage() {
     return path.includes('/fr/') ? 'fr' : 'en';
   }
   
-  // Function to get language-appropriate URL
-  function getLocalizedUrl(projectSlug) {
-    const language = getCurrentLanguage();
-    
-    // Mapping from English slugs to French slugs
-    const projectMapping = {
-      "implementing-an-organisational-development-action-plan": "mettre-en-oeuvre-un-plan-daction-de-developpement-organisa",
-      "support-programme-for-biodiversity-ngos-working-in-developin": "programme-dappui-aux-ong-de-biodiversite-actives-dans-les-pa",
-      "stepping-up-protection-for-a-thousand-hectares-of-forest-fra": "renforcement-de-la-protection-dun-millier-dhectares-de-fragm",
-      "creating-a-forest-for-learning-iii": "creer-une-foret-pour-lapprentissage-iii",
-      "resilience-and-adaptation-to-climate-change-in-the-sitatunga": "resilience-et-adaptation-au-changement-climatique-dans-la-va",
-      "sustainable-protection-of-biodiversity-in-the-vaud-alps": "proteger-durablement-la-biodiversite-dans-les-alpes-vaudoise",
-      "green-cashew-sustainable-cashew-cultivation-to-fight-climate": "green-cashew-culture-durable-de-la-noix-de-cajou-pour-lutter",
-      "foretxcellence": "foretxcellence",
-      "risoud-resonance-wood-learning-trail": "sentier-didactique-du-bois-de-resonance-du-risoud",
-      "support-for-sustainable-development-through-the-conservation": "appui-au-developpement-durable-a-travers-la-conservation-et",
-      "agroforestry-and-green-entrepreneurship": "agroforesterie-et-entrepreneuriat-vert",
-      "sentier-de-la-morges-trail": "sentier-de-la-morges",
-      "toile-verte": "toile-verte",
-      "integrated-management-of-mangrove-landscape-in-the-douala-ed": "gestion-integree-des-paysages-de-mangroves-dans-le-parc-nati",
-      "time-for-conservation-of-endemic-threatened-flora-in-cape-ve": "agir-maintenant-pour-la-preservation-de-la-flore-endemique-m",
-      "improving-mediation-and-conservation": "amelioration-de-la-mediation-et-de-la-conservation",
-      "supporting-the-reconstitution-of-forest-cover-through-agro-e": "appui-a-la-reconstitution-du-couvert-forestier-par-des-prati",
-      "blue-forests": "forets-bleues",
-      "reforestation-and-brazil-nuts": "reforestation-et-noix-du-bresil",
-      "awareness-raising-and-environmental-education-for-young-peop": "sensibilisation-et-education-environnementale-de-jeunes-des",
-      "agro-ecological-restoration-and-agroforestry-in-the-green-be": "restauration-agro-ecologique-et-agroforesterie-dans-la-ceint",
-      "forest-restoration-and-preservation-on-the-island-of-flores": "restauration-et-preservation-des-forets-de-lile-de-flores-in",
-      "mountain-farmers-and-savannah-pastoralists-conserving-sustai": "agriculteurs-de-montagne-et-eleveurs-de-la-savane-preserver",
-      "sea-forest": "la-foret-de-la-mer",
-      "save-the-pilat-forests": "sauvons-les-forets-du-pilat",
-      "mikago": "mikago",
-      "reception-infrastructure-at-the-parc-naturel-du-jorat": "infrastructures-daccueil-du-parc-naturel-du-jorat",
-      "protection-de-la-foret-par-la-titularisation-fonciere-de-com": "protection-de-la-foret-par-la-titularisation-fonciere-de-com",
-      "conservation-of-threatened-woody-species": "conservation-des-especes-ligneuses-menacees",
-      "mpigi-forest-school": "lecole-de-la-foret-de-mpigi",
-      "13": "13",
-      "fruit-producing-edges-of-the-grandes-tattes-forest-14": "lisieres-fruitieres-de-la-foret-des-grandes-tattes-14",
-      "reinforcing-the-traditional-medicinal-plant-culture-and-refo": "valorisation-du-savoir-traditionnel-sur-les-plantes-medicina",
-      "reforestation-and-agroforestry-on-the-bateke-plateau": "reforestation-et-agroforesterie-sur-le-plateau-de-bateke",
-      "supporting-local-communities-through-the-conservation-of-anc": "soutenir-les-communautes-locales-par-la-conservation-des-for",
-      "improving-the-lives-of-rural-communities-through-the-plantin": "ameliorer-la-vie-des-communautes-rurales-par-la-plantation-d",
-      "sustainable-mass-timber-construction-for-resilient-rural-eco": "constructions-durables-en-bois-de-charpente-pour-des-economi",
-      "itombwe-forest-conservation": "conservation-de-la-foret-ditombwe",
-      "empowering-ethnic-minority-women-for-sustainable-forest-mana": "autonomiser-les-femmes-de-minorites-ethniques-par-la-gestion",
-      "integrated-forest-resource-management": "gestion-integree-des-ressources-forestieres",
-      "ancestral-knowledge-preservation-conservation-and-cultivatio": "preservation-des-savoirs-ancestraux-conservation-et-culture",
-      "creating-a-forest-for-learning-ii": "creer-une-foret-pour-lapprentissage-ii",
-      "multipalms": "multipalms",
-      "dundreggan-rewilding-centre": "dundreggan-rewilding-centre",
-      "environmental-education-centres": "centres-deducation-environnementale",
-      "support-for-traditional-mayan-agriculture-and-raising-awaren": "appui-a-lagriculture-traditionnelle-maya-et-sensibilisation",
-      "afforestation-of-chambarak-and-ttujur-communities": "reforestation-par-les-communautes-chambarak-et-ttujur",
-      "the-foresters-world": "univers-forestier",
-      "stepping-up-protection-for-madagascars-largest-wild-populati": "renforcement-de-la-protection-de-la-plus-importante-populati",
-      "landscape-and-biodiversity": "paysage-et-biodiversite",
-      "preserver-les-dernieres-forets-seches-par-lagroforesterie": "preserver-les-dernieres-forets-seches-par-lagroforesterie"
-    };
-    
-    if (language === 'fr') {
-      const frenchSlug = projectMapping[projectSlug] || projectSlug;
-      return `/fr/fondation-pour-les-arbres-nos-projets/${frenchSlug}`;
-    } else {
-      return `/en/fondation-pour-les-arbres-projects/${projectSlug}`;
-    }
-  }
+  // EXAMPLE: Uncomment and customize this function if you need localized URLs
+  // function getLocalizedUrl(projectSlug) {
+  //   const language = getCurrentLanguage();
+  //   
+  //   // Example project mapping - customize with your own project slugs
+  //   const projectMapping = {
+  //     "project-one": "projet-un",
+  //     "project-two": "projet-deux",
+  //     "project-three": "projet-trois"
+  //   };
+  //   
+  //   if (language === 'fr') {
+  //     const frenchSlug = projectMapping[projectSlug] || projectSlug;
+  //     return `/fr/projects/${frenchSlug}`;
+  //   } else {
+  //     return `/en/projects/${projectSlug}`;
+  //   }
+  // }
   
   // Utility function to close all open InfoWindows
   function closeAllInfoWindows() {
@@ -86,7 +38,9 @@ function getCurrentLanguage() {
   // Function to create InfoBox content with localized links
   function createInfoBoxContent(imageId, imageName, partner, country, dateRange, title, category, projectSlug) {
     const language = getCurrentLanguage();
-    const localizedUrl = getLocalizedUrl(projectSlug);
+    // TODO: Customize this URL to point to your specific project page
+    // Alternative: Use getLocalizedUrl(projectSlug) if you uncomment the function above
+    const localizedUrl = '/';
     
     // Country name translations
     const countryTranslations = {
@@ -128,80 +82,19 @@ function getCurrentLanguage() {
       "Ancestral knowledge": "Savoirs ancestraux"
     };
     
-    // Project title translations (for the projects in the map)
-    const titleTranslations = {
-      "Implementing an organisational development action plan": "Mettre en œuvre un plan d'action de développement organisationnel",
-      "Support programme for biodiversity NGOs working in developing countries (ProBioDev)": "Programme d'appui aux ONG de biodiversité actives dans les pays en développement (ProBioDev)",
-      "Stepping up protection for a thousand hectares of forest fragments housing the largest population of greater bamboo lemurs in the wild": "Renforcement de la protection d'un millier d'hectares de fragments forestiers abritant la plus importante population de grands hapalémurs sauvages",
-      "Creating a forest for learning III": "Créer une forêt pour l'apprentissage III",
-      "Resilience and adaptation to climate change in the Sitatunga Valley": "Résilience et adaptation au changement climatique dans la vallée du Sitatunga",
-      "Sustainable protection of biodiversity in the Vaud Alps": "Protéger durablement la biodiversité dans les Alpes vaudoises",
-      "Green Cashew - Sustainable cashew cultivation to fight climate change": "Green Cashew - Culture durable de la noix de cajou pour lutter contre le changement climatique",
-      "Forêtxcellence": "Forêtxcellence",
-      "Risoud resonance wood learning trail": "Sentier didactique du bois de résonance du Risoud",
-      "Support for sustainable development through the conservation and enhancement of local biodiversity": "Appui au développement durable à travers la conservation et la valorisation de la biodiversité locale",
-      "Agroforestry and green entrepreneurship": "Agroforesterie et entrepreneuriat vert",
-      "Sentier de la Morges trail": "Sentier de la Morges",
-      "Toile verte": "Toile verte",
-      "Integrated management of mangrove landscapes in Douala-Edéa National Park": "Gestion intégrée des paysages de mangroves dans le Parc national de Douala-Edéa",
-      "Time for conservation of endemic threatened flora in Cape Verde's islands": "Agir maintenant pour la préservation de la flore endémique menacée des îles du Cap-Vert",
-      "Improving mediation and conservation": "Amélioration de la médiation et de la conservation",
-      "Supporting the reconstitution of forest cover through agro-ecological practices": "Appui à la reconstitution du couvert forestier par des pratiques agro-écologiques",
-      "Blue forests": "Forêts bleues",
-      "Reforestation and Brazil nuts": "Reforestation et noix du Brésil",
-      "Awareness raising and environmental education for young people in vocational schools and communities": "Sensibilisation et éducation environnementale de jeunes des écoles professionnelles et des communautés",
-      "Agro-ecological restoration and agroforestry in the green belt of the city of Ouagadougou": "Restauration agro-écologique et agroforesterie dans la ceinture verte de la ville de Ouagadougou",
-      "Forest restoration and preservation on the island of Flores, Indonesia": "Restauration et préservation des forêts de l'île de Florès, Indonésie",
-      "Mountain farmers and savannah pastoralists: conserving sustainable livelihoods in East Africa": "Agriculteurs de montagne et éleveurs de la savane : préserver des moyens de subsistance durables en Afrique de l'Est",
-      "Sea forest": "La forêt de la mer",
-      "Save the Pilat forests": "Sauvons les forêts du Pilat",
-      "MiKaGo": "MiKaGo",
-      "Reception infrastructure at the Parc naturel du Jorat": "Infrastructures d'accueil du Parc naturel du Jorat",
-      "Protection of the forest through the official establishment of indigenous communities": "Protection de la forêt par la titularisation foncière de communautés indigènes",
-      "Conservation of threatened woody species": "Conservation des espèces ligneuses menacées",
-      "Mpigi forest school": "L'école de la forêt de Mpigi",
-      "": "", // Empty title case
-      "Fruit-producing edges of the Grandes Tattes forest": "Lisières fruitières de la forêt des Grandes Tattes",
-      "Reinforcing the traditional medicinal plant culture and reforestation of the Surui territory": "Valorisation du savoir traditionnel sur les plantes médicinales et reforestation du territoire Surui",
-      "Reforestation and agroforestry on the Batéké plateau": "Reforestation et agroforesterie sur le plateau de Batéké",
-      "Supporting local communities through the conservation of ancient fruit and nut forests": "Soutenir les communautés locales par la conservation des forêts anciennes de fruits et noix",
-      "Improving the lives of rural communities through the planting of agroforestry groves and by adopting agro-ecological practices": "Améliorer la vie des communautés rurales par la plantation de bosquets agroforestiers et par l'adoption de pratiques agro-écologiques",
-      "Sustainable mass timber construction for resilient rural economies": "Constructions durables en bois de charpente pour des économies rurales résilientes",
-      "Itombwe forest conservation": "Conservation de la forêt d'Itombwe",
-      "Empowering ethnic minority women through sustainable forest management in nature reserves": "Autonomiser les femmes de minorités ethniques par la gestion durable des forêts dans les réserves naturelles",
-      "Integrated forest resource management": "Gestion intégrée des ressources forestières",
-      "Ancestral knowledge preservation, conservation and cultivation of endangered medicinal and aromatic plants in the Himalayas": "Préservation des savoirs ancestraux, conservation et culture de plantes médicinales et aromatiques en danger dans l'Himalaya",
-      "Creating a forest for learning II": "Créer une forêt pour l'apprentissage II",
-      "Multipalms": "Multipalms",
-      "Dundreggan Rewilding Centre": "Centre de réensauvagement de Dundreggan",
-      "Environmental education centres": "Centres d'éducation environnementale",
-      "Support for traditional Mayan agriculture and raising awareness of family nutrition": "Appui à l'agriculture traditionnelle maya et sensibilisation à la nutrition familiale",
-      "Afforestation of Chambarak and Ttujur communities": "Reforestation par les communautés Chambarak et Ttujur",
-      "The Forester's world": "L'univers du forestier",
-      "Stepping up protection for Madagascar's largest wild population of greater bamboo lemurs": "Renforcement de la protection de la plus importante population sauvage de grands hapalémurs de Madagascar",
-      "Landscape and biodiversity": "Paysage et biodiversité",
-      "Preserving the last dry forests through agroforestry": "Préserver les dernières forêts sèches par l'agroforesterie"
-    };
-    
-    // Partner name translations (some may stay the same)
-    const partnerTranslations = {
-      "Trees for Life": "Trees for Life",
-      "The National Forest Company": "The National Forest Company",
-      "Jardin Botanique de l'Université de Fribourg": "Jardin Botanique de l'Université de Fribourg"
-      // Add more as needed - many will stay the same
-    };
+    // Note: titleTranslations and partnerTranslations removed - using direct lorem ipsum text
     
     // Translate content based on language
     let localizedCountry = country;
-    let localizedTitle = title;
+    let localizedTitle = "Lorem ipsum dolor sit amet consectetur adipiscing elit";
     let localizedCategory = category;
-    let localizedPartner = partner;
+    let localizedPartner = "Lorem Ipsum Organization";
     let seeMoreText = "→ See more";
     
     if (language === 'fr') {
       localizedCountry = countryTranslations[country] || country;
-      localizedTitle = titleTranslations[title] || title;
-      localizedPartner = partnerTranslations[partner] || partner;
+      localizedTitle = "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor";
+      localizedPartner = "Organisation Lorem Ipsum";
       seeMoreText = "→ Voir en détail";
       
       // Translate category labels
@@ -354,7 +247,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("implementing-an-organisational-development-action-plan");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -399,7 +294,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("support-programme-for-biodiversity-ngos-working-in-developin");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -444,7 +341,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("stepping-up-protection-for-a-thousand-hectares-of-forest-fra");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -489,7 +388,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("creating-a-forest-for-learning-iii");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -534,7 +435,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("resilience-and-adaptation-to-climate-change-in-the-sitatunga");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -579,7 +482,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("sustainable-protection-of-biodiversity-in-the-vaud-alps");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -624,7 +529,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("green-cashew-sustainable-cashew-cultivation-to-fight-climate");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -669,7 +576,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("foretxcellence");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -714,7 +623,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("risoud-resonance-wood-learning-trail");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -759,7 +670,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("support-for-sustainable-development-through-the-conservation");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -804,7 +717,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("agroforestry-and-green-entrepreneurship");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -849,7 +764,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("sentier-de-la-morges-trail");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -894,7 +811,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("toile-verte");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -939,7 +858,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("integrated-management-of-mangrove-landscape-in-the-douala-ed");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -984,7 +905,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("time-for-conservation-of-endemic-threatened-flora-in-cape-ve");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1029,7 +952,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("improving-mediation-and-conservation");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1074,7 +999,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("supporting-the-reconstitution-of-forest-cover-through-agro-e");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1119,7 +1046,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("blue-forests");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1164,7 +1093,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("reforestation-and-brazil-nuts");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1209,7 +1140,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("awareness-raising-and-environmental-education-for-young-peop");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1254,7 +1187,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("agro-ecological-restoration-and-agroforestry-in-the-green-be");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1299,7 +1234,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("forest-restoration-and-preservation-on-the-island-of-flores");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1344,7 +1281,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("mountain-farmers-and-savannah-pastoralists-conserving-sustai");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1389,7 +1328,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("sea-forest");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1434,7 +1375,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("save-the-pilat-forests");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1479,7 +1422,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("mikago");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1524,7 +1469,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("reception-infrastructure-at-the-parc-naturel-du-jorat");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1569,7 +1516,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("protection-de-la-foret-par-la-titularisation-fonciere-de-com");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1614,7 +1563,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("conservation-of-threatened-woody-species");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1659,7 +1610,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("mpigi-forest-school");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1704,7 +1657,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("13");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1749,7 +1704,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("fruit-producing-edges-of-the-grandes-tattes-forest-14");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1794,7 +1751,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("reinforcing-the-traditional-medicinal-plant-culture-and-refo");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1839,7 +1798,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("reforestation-and-agroforestry-on-the-bateke-plateau");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1884,7 +1845,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("supporting-local-communities-through-the-conservation-of-anc");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1929,7 +1892,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("improving-the-lives-of-rural-communities-through-the-plantin");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -1974,7 +1939,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("sustainable-mass-timber-construction-for-resilient-rural-eco");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2019,7 +1986,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("itombwe-forest-conservation");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2064,7 +2033,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("empowering-ethnic-minority-women-for-sustainable-forest-mana");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2109,7 +2080,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("integrated-forest-resource-management");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2154,7 +2127,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("ancestral-knowledge-preservation-conservation-and-cultivatio");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2199,7 +2174,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("creating-a-forest-for-learning-ii");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2244,7 +2221,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("multipalms");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2289,7 +2268,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("dundreggan-rewilding-centre");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2334,7 +2315,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("environmental-education-centres");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2379,7 +2362,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("support-for-traditional-mayan-agriculture-and-raising-awaren");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2424,7 +2409,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("afforestation-of-chambarak-and-ttujur-communities");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2469,7 +2456,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("the-foresters-world");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2514,7 +2503,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("stepping-up-protection-for-madagascars-largest-wild-populati");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2559,7 +2550,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("landscape-and-biodiversity");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
@@ -2604,7 +2597,9 @@ function getCurrentLanguage() {
       });  
       
      marker.addListener('click', function() {
-     window.location.href = getLocalizedUrl("preserver-les-dernieres-forets-seches-par-lagroforesterie");
+     // TODO: Customize this URL to point to your specific project page
+     // Alternative: Use getLocalizedUrl("your-project-slug") if you uncomment the function above
+     window.location.href = '/';
        
     });
     } else {
