@@ -42,81 +42,68 @@ scripts/utils.js       # 🛠️ Utility functions
 The following diagram shows how all components work together:
 
 ```mermaid
-flowchart TD
+flowchart LR
     A["`**Page Load**
-    HTML contains map block`"] --> B["`**map.js**
-    Block decorator function`"]
+    HTML Block`"] --> B["`**map.js**
+    Decorator`"]
     
-    B --> C["`**Setup Phase**
-    - Create map container div
-    - Generate security nonce
-    - Get locale from URL`"]
+    B --> C["`**Setup**
+    Container + Nonce`"]
     
-    C --> D["`**loadMapScripts()**
-    Sequential dependency loading`"]
+    C --> D["`**Dependency Loading**`"]
     
-    D --> E["`**jQuery**
-    Load from CDN
-    Required by initmapscript.js`"]
+    D --> E["`**jQuery**`"]
+    D --> F["`**initmapscript.js**
+    +initMap() function`"]
+    D --> G["`**mapstyles.js**
+    +Visual config`"]
+    D --> H["`**markerclusterer.js**
+    +Clustering lib`"]
     
-    E --> F["`**initmapscript.js**
-    Defines initMap() function
-    + Language detection
-    + Project URL mapping`"]
+    E --> I["`**Google Maps API**
+    callback=initMap`"]
+    F --> I
+    G --> I
+    H --> I
     
-    F --> G["`**mapstyles.js**
-    Map visual styling config
-    (audemarsmapstyles variable)`"]
+    I --> J["`**initMap()**
+    Execution`"]
     
-    G --> H["`**markerclusterer.js**
-    Marker clustering library
-    Groups nearby markers`"]
+    J --> K1["`**Map Creation**
+    new google.maps.Map()`"]
+    J --> K2["`**Load infobox.js**
+    Custom popups`"]
+    J --> K3["`**Create Markers**
+    Coordinates + Categories`"]
     
-    H --> I["`**Google Maps API**
-    Load with callback=initMap
-    + API key from config.js
-    + Locale parameter`"]
+    K1 --> L["`**Apply Styling**
+    audemarsmapstyles`"]
+    K2 --> M["`**InfoBox Setup**
+    Rich popup content`"]
+    K3 --> N["`**Marker Clustering**
+    Performance optimization`"]
     
-    I --> J["`**initMap() Execution**
-    Core map initialization`"]
+    L --> O["`**Category Integration**`"]
+    M --> O
+    N --> O
     
-    J --> K["`**Map Creation**
-    new google.maps.Map()
-    + Custom styles applied
-    + Center & zoom settings`"]
+    O --> P["`**filterMapByCategory()**
+    Dynamic zoom logic`"]
     
-    K --> L["`**Load infobox.js**
-    Custom InfoWindow library
-    For styled popups`"]
-    
-    L --> M["`**Create Markers**
-    For each project:
-    - Lat/lng coordinates
-    - Category assignment
-    - InfoBox content`"]
-    
-    M --> N["`**Marker Clustering**
-    MarkerClusterer groups markers
-    + Custom cluster styles
-    + Performance optimization`"]
-    
-    N --> O["`**Category Filter Setup**
-    cards.js integration:
-    - filterMapByCategory()
-    - Dynamic bounds calculation`"]
-    
-    O --> P["`**Interactive Map Ready**
-    - Clickable markers
-    - Category filtering
-    - Auto-zoom on filter
-    - Custom popups
-    - Responsive design`"]
+    P --> Q["`**🗺️ Interactive Map**
+    ✓ Clickable markers
+    ✓ Category filtering  
+    ✓ Auto-zoom
+    ✓ Custom popups
+    ✓ Multi-language`"]
 
-    style A fill:#e1f5fe
-    style J fill:#f3e5f5
-    style P fill:#e8f5e8
-    style B fill:#fff3e0
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
     style I fill:#fce4ec
+    style J fill:#e8f5e8
+    style Q fill:#e1f5fe
+    style D fill:#fff3e0
+    style O fill:#f1f8e9
 ```
 
 ## 📋 Detailed Component Breakdown
