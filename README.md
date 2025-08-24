@@ -274,6 +274,14 @@ const categoryMapping = {
 };
 ```
 
+> **📋 For detailed customization examples and industry-specific templates, see [README-map-categories.md](./README-map-categories.md)**
+> 
+> That document includes:
+> - Business services mapping examples
+> - Educational programs configuration
+> - Restaurant/retail location setups  
+> - Step-by-step customization guide
+
 ## 🌍 Multi-language Support
 
 The system supports English and French content:
@@ -485,4 +493,30 @@ When contributing to the map system:
 
 ---
 
-*For detailed configuration options and examples, see [README-map-categories.md](./README-map-categories.md)*
+## 📚 Related Documentation
+
+### 📋 [README-map-categories.md](./README-map-categories.md)
+**Focus**: Category system customization and configuration
+- Industry-specific mapping examples (business, education, restaurants)
+- Step-by-step customization guide
+- Ready-to-use templates for different project types
+- Detailed configuration instructions
+
+### 🗂️ Documentation Structure
+```
+README.md                 ← Technical architecture & development (you are here)
+├── System overview
+├── File relationships  
+├── Performance & security
+└── Development workflow
+
+README-map-categories.md  ← Customization & usage guide
+├── Category configuration examples
+├── Industry templates
+├── Step-by-step setup
+└── Practical implementation
+```
+
+**💡 Recommended Reading Order:**
+1. **README.md** (this file) - Understand the technical system
+2. **README-map-categories.md** - Customize for your specific project
